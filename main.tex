@@ -21,7 +21,7 @@ Different methods can produce quite different spatial representations and in-dep
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.7\textwidth]{img/interpolation.jpg}
+    \includegraphics[width=0.65\textwidth]{img/interpolation.jpg}
     \caption{Different interpolation methods}
     \label{fig:my_label}
 \end{figure}
@@ -29,7 +29,7 @@ Different methods can produce quite different spatial representations and in-dep
 \section{Local neighbourhood approach}
 Local methods are based on the assumption that each point influences the resulting surface only up to a certain finite distance.
 \paragraph{Inverse distance weighted interpolation (IDW)}
-It is based on an assumption that the value at an unsampled point can be approximated as a weighted average of values at points within a certain cut-off distance, or from a given number m of the closest points (typically 10 to 30). Weights are usually inversely proportional to a power of distance. However, the method often does not reproduce the local shape implied by data and produces local extrema (goose bumps) at the data points (Fig. \ref{fig:my_label}(c)).
+It is based on an assumption that the value at an unsampled point can be approximated as a weighted average of values at points within a certain cut-off distance, or from a given number of the closest points (typically 10 to 30). Weights are usually inversely proportional to a power of distance. However, the method often does not reproduce the local shape implied by data and produces local extrema (goose bumps) at the data points (Fig. \ref{fig:my_label}(c)).
 
 \paragraph{Natural neighbour interpolation}
 This uses a weighted average of local data based on the concept of natural neighbour coordinates derived from Thiessen polygons. The value in an unsampled location is computed as a weighted average of the nearest neighbour values with weights dependent on areas or volumes rather than distances. Natural neighbour linear interpolation leads to a rubber-sheet character of the resulting surface.
